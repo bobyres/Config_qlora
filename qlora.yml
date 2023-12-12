@@ -35,7 +35,7 @@ wandb_watch:
 wandb_run_id:
 wandb_log_model: "checkpoint"
 
-gradient_accumulation_steps: 1
+gradient_accumulation_steps: 2
 micro_batch_size: 1
 num_epochs: 3
 optimizer: paged_adamw_32bit
