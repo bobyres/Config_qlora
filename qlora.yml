@@ -1,5 +1,5 @@
-base_model: bofenghuang/vigogne-2-7b-chat
-base_model_config: bofenghuang/vigogne-2-7b-chat
+base_model: bobyres/Vigogne7b_finetune
+base_model_config: bobyres/Vigogne7b_finetune
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
 is_llama_derived_model: true
@@ -9,7 +9,7 @@ load_in_4bit: true
 strict: false
 
 datasets:
-  - path: bobyres/CR_V2
+  - path: bobyres/CR_V3
     type: alpaca 
 
 dataset_prepared_path: last_run_prepared
@@ -29,13 +29,13 @@ lora_target_modules:
 lora_target_linear: true
 lora_fan_in_fan_out:
 
-wandb_project: "vigogne-CR_V3"
+wandb_project: "vigogne-CR_V4"
 wandb_entity:
 wandb_watch:
 wandb_run_id:
 wandb_log_model: "checkpoint"
 
-gradient_accumulation_steps: 2
+gradient_accumulation_steps: 1
 micro_batch_size: 1
 num_epochs: 3
 optimizer: paged_adamw_32bit
