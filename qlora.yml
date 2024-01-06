@@ -1,5 +1,5 @@
-base_model: bofenghuang/vigogne-2-13b-instruct
-base_model_config: bofenghuang/vigogne-2-13b-instruct
+base_model: bofenghuang/vigogne-2-7b-instruct
+base_model_config: bofenghuang/vigogne-2-7b-instruct
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
 is_llama_derived_model: true
@@ -29,7 +29,7 @@ lora_target_modules:
 lora_target_linear: true
 lora_fan_in_fan_out:
 
-wandb_project: "vigogne-13b-Instruct"
+wandb_project: "vigogne-7B-Instruct"
 wandb_entity:
 wandb_watch:
 wandb_run_id:
